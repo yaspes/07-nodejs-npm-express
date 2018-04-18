@@ -50,7 +50,7 @@ Article.prototype.insertRecord = function(callback) {
       console.log(data);
 
       // COMMENT (COMPLETED): What is the purpose of this line? Is the callback invoked when this method is called? Why or why not?
-      // The purpose of this line is to 
+      // The purpose of the callback function is to continue the execution of our code after an asynchronous action has been completed. The call will be invoked if there are additional, uncompleted functions
       if (callback) callback();
     })
 };
